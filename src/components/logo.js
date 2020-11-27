@@ -8,9 +8,21 @@ export const Logo = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       lottieRef.current.play()
-    }, 3000);
+    }, 1500);
     return () => clearTimeout(timer);
   }, []);
 
-  return <Lottie lottieRef={lottieRef} animationData={Name_Logo} loop={false} autoplay={false} />
+  return (
+    <div className="logo-block">
+      <div className="logo">
+        <Lottie lottieRef={lottieRef} animationData={Name_Logo} loop={false} autoplay={false} />
+      </div>
+      <div className="d-flex flex-row justify-content-center w-100">
+        <div className="slogan-words">FULL</div>
+        <div className="slogan-words">STACK</div>
+        <div className="slogan-words">WEB</div>
+        <div className="slogan-words">DEVELOPER</div>
+      </div>
+    </div>
+  )
 }
