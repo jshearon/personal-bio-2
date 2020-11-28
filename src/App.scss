@@ -72,3 +72,48 @@
     opacity: 1;
 	}
 }
+
+.toggle-logo-enter {
+  position: absolute;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle-logo-enter-active {
+  position: absolute;
+  width: 80vw;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top .5s ease-in;
+}
+.toggle-logo-enter-done {
+  position: absolute;
+  width: 80vw;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle-logo-exit {
+  position: absolute;
+  width: 80vw;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.toggle-logo-exit-active {
+  position: absolute;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: top .5s ease-in;
+}
+.toggle-logo-exit-done {
+  position: absolute;
+  width: 80vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

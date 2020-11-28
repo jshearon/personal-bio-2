@@ -1,32 +1,38 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
 import Lottie from 'react-lottie-player'
 import Name_Logo from './name_logo.json'
 import { LogoContext } from './logoProvider';
 
 export const Logo = (props) => {
-  const [segmentFrom, setSegmentFrom] = useState(0)
-  const [segmentTo, setSegmentTo] = useState(225)
-  const [segmentsEnabled, setSegmentsEnabled] = useState(true);
-  const [ logoPlace, setLogoPlace ] = useState(0)
-  const segments = [segmentFrom, segmentTo]
   
-  const { logoPlay, setLogoPlay } = useContext(LogoContext)
-  const { logoDirection, setLogoDirection } = useContext(LogoContext)
-  // const lottieRef = useRef();
-
-  // const reverse = () => {
-  //  lottieRef.current.setDirection(-1)
-  //  lottieRef.current.play()
-  // }
-
-  // useEffect(() => {
-  //  const timer = setTimeout(() => {
-  //    lottieRef.current.play()
-  //  }, 1500);
-  //  return () => clearTimeout(timer);
-  // }, []);
+  const { 
+    logoPlay, 
+    setLogoPlay, 
+    logoDirection, 
+    setLogoDirection, 
+    segmentFrom,
+    setSegmentFrom, 
+    segmentTo,
+    setSegmentTo, 
+    segments, 
+    segmentsEnabled,
+    setSegmentsEnabled, 
+    logoPlace,
+    setLogoPlace,
+    setToggleLogo, 
+    toggleLogo,
+    playForward,
+    playBackward 
+  } = useContext(LogoContext)
 
   return (
+    <CSSTransition
+      in={toggleLogo}
+      timeout={1000}
+      classNames="toggle-logo"
+      appear
+      >
     <div className="logo-block">
       <div className="logo">
         <Lottie animationData={Name_Logo} loop={false} play={logoPlay} direction={logoDirection} goTo={logoPlace} segments={segmentsEnabled && segments} />
@@ -37,11 +43,7 @@ export const Logo = (props) => {
         <div className="slogan-words">WEB</div>
         <div className="slogan-words">DEVELOPER</div>
       </div>
-      <button onClick={() => {
-        setLogoDirection(-1)
-        setSegmentFrom(210)
-        setSegmentTo(130)
-      }}>Reverse</button>
     </div>
+    </CSSTransition>
   )
 }
