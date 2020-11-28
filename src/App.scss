@@ -9,9 +9,27 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.navbar > button {
+  border-color: white !important;
+  color: white !important;
+}
+
 .navbar-nav {
   margin: auto;
   background-color: transparent;
+}
+
+.navbar-nav > a {
+  color: white !important;
+  font-size: 2vw;
+}
+
+.navbar-nav > .active {
+  text-decoration: underline !important;
+}
+
+.navbar-toggler-icon {
+  color: white !important;
 }
 
 .logo-block {
