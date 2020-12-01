@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Sports Roster",
+    "image": "sports-roster-ss.gif",
+    "description": "A fun manager for your fantasy baseball team that displays your roster as animated classic baseball cards.",
+    "tech": ["html5", "css3", "sass", "javascript", "react", "firebase"],
+    "url": "https://sports-roster-7cae4.web.app/",
+    "code": "https://github.com/jshearon/sports-roster"
+  }
+]

@@ -29,7 +29,7 @@ export const Logo = (props) => {
   return (
     <CSSTransition
       in={toggleLogo}
-      timeout={1000}
+      timeout={600}
       classNames="toggle-logo"
       appear
       >

@@ -15,17 +15,18 @@
 }
 
 .navbar-nav {
-  margin: auto;
   background-color: transparent;
 }
 
 .navbar-nav > a {
   color: white !important;
-  font-size: 2vw;
+  font-size: calc(7px + .5vw);
 }
 
 .navbar-nav > .active {
-  text-decoration: underline !important;
+  color: #ED553B !important;
+  background-color: white;
+  border-radius: .5vw;
 }
 
 .navbar-toggler-icon {
@@ -52,6 +53,7 @@
 
 .slogan-words {
   margin: 1vw;
+  font-size: 2vw;
   letter-spacing: .8vw;
   opacity: 0;
   font-weight: 400;
@@ -79,28 +81,41 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  .slogan-words {
+    opacity: 1 !important;
+  }
 }
 .toggle-logo-enter-active {
   position: absolute;
-  width: 80vw;
-  top: 80%;
+  width: 30vw;
+  top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: top .5s ease-in;
+  .slogan-words {
+    opacity: 0 !important;
+    transition: opacity .5s ease-in;
+  }
 }
 .toggle-logo-enter-done {
   position: absolute;
-  width: 80vw;
-  top: 80%;
+  width: 30vw;
+  top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
+  .slogan-words {
+    opacity: 0 !important;
+  }
 }
 .toggle-logo-exit {
   position: absolute;
-  width: 80vw;
-  top: 80%;
+  width: 30vw;
+  top: 93%;
   left: 50%;
   transform: translate(-50%, -50%);
+  .slogan-words {
+    opacity: 0 !important;
+  }
 }
 .toggle-logo-exit-active {
   position: absolute;
@@ -109,6 +124,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   transition: top .5s ease-in;
+  .slogan-words {
+    opacity: 1 !important;
+    transition: opacity .5s ease-in;
+  }
 }
 .toggle-logo-exit-done {
   position: absolute;
@@ -116,4 +135,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  .slogan-words {
+    opacity: 1 !important;
+  }
+}
+
+.about {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  h1 {
+    font-size: 5vw;
+  }
+  h3 {
+    font-weight: 300;
+    font-size: 3vw;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .about h1 {
+    font-size: 35px;
+  }
+  .about h3 {
+    margin-top: 25px;
+    font-size: 25px;
+  }
 }

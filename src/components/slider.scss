@@ -1,0 +1,114 @@
+.projects {
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.project-text {
+  min-width: 250px !important;
+}
+
+.frame-image {
+  max-height: 300px;
+  img {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .frame-image {
+    max-height: 200px;
+  }
+}
+
+/* The browser window */
+.browser-container {
+  border: .1vw solid #f1f1f1;
+  background: #f1f1f1;
+  border-radius: .5vw;
+  overflow: hidden;
+  min-width: 250px !important;
+  width: 50% !important;
+  margin-bottom: 2.5vw;
+  margin-right: 2.5vw;
+}
+
+/* Container for columns and the top "toolbar" */
+.browser-row {
+  padding: .5vh 0 .5vh 0;
+  width: 100%;
+}
+
+/* Clear floats after the columns */
+.browser-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Three dots */
+.browser-dot {
+  margin: .4vw;
+  height: 2.2vh;
+  max-height: 12px;
+  width: 2.2vh;
+  max-width: 12px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Style the input field */
+.search-box {
+  border-radius: 5px;
+  border: none;
+  background-color: white;
+  font-size: 1vh;
+  width: 20vw;
+  color: #666;
+  padding: .5vh;
+  overflow: hidden;
+}
+
+/* Three bars (hamburger menu) */
+.browser-bar {
+  width: .8vw;
+  height: .2vw;
+  background-color: #aaa;
+  margin: .3vw 0;
+  display: block;
+}
+
+/* Page content */
+.browser-content {
+  padding: 0;
+}
+
+.browser-dot1 {
+  background:#ED594A;
+}
+
+.browser-dot2 {
+  background:#FDD800;
+}
+
+.browser-dot3 {
+  background:#5AC05A;
+}
+
+.techbadge {
+  fill: white; 
+  height: 5vw;
+  max-height: 30px;
+  margin: .5vw;
+}
+
+.project-links {
+  background-color: #24305E;
+  padding: .5vw 1.5vw .5vw 1.5vw;
+  border-radius: 1500px;
+  font-size: 2vw;
+  a {
+    color: white;
+  }
+}
