@@ -145,6 +145,11 @@
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   h1 {
     font-size: 5vw;
   }
@@ -162,4 +167,20 @@
     margin-top: 25px;
     font-size: 25px;
   }
+}
+
+.contact {
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+.skills {
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }

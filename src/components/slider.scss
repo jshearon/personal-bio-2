@@ -2,22 +2,36 @@
   width: 80%;
   height: 80%;
   margin: auto;
+  animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 .project-text {
   min-width: 250px !important;
+  max-width: 50%;
+}
+
+.project-section {
+  height: 55vh;
+  overflow: scroll;
 }
 
 .frame-image {
-  max-height: 300px;
+  border-radius: 5px;
+  max-width: 50%;
+  margin-right: 20px;
+  max-height: 400px;
   img {
-    margin: auto;
+    margin: 0 auto 20px auto;
   }
 }
 
 @media only screen and (max-width: 600px) {
   .frame-image {
-    max-height: 200px;
+    max-height: 250px;
   }
 }
 
@@ -105,10 +119,15 @@
 
 .project-links {
   background-color: #24305E;
-  padding: .5vw 1.5vw .5vw 1.5vw;
-  border-radius: 1500px;
-  font-size: 2vw;
+  width: 8vw;
+  min-width: 50px;
+  height: 4vh;
+  border-radius: 5px;
+  text-align: center;
   a {
+    width: 100%;
+    line-height: 4vh;
+    font-size: calc(7px + .5vw);
     color: white;
   }
 }
