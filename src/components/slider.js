@@ -24,7 +24,7 @@ export default function SimpleSlider() {
       {projectList.map((project) => {
         return (
       <section className="d-flex flex-wrap justify-content-center align-items-center project-section">
-        <img src={`/images/${project.image}`}  alt={project.title} className="frame-image" />
+        <img src={project.image.includes('http') ? project.image : `/images/${project.image}`}  alt={project.title} className="frame-image" />
         <div className="project-text text-left">
           <h2 className="project-title">{project.title}</h2>
             <p className="project-description">{project.description}</p>

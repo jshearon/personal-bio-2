@@ -1,5 +1,13 @@
 [
   {
+    "title": "Practice Pal",
+    "image": "https://lh3.googleusercontent.com/proxy/sQRJkLCQA9uy9QcmhFJOa7hUG84VY4WSwVfZ6ZAaj-9xci4pJF-iEZIiQwoPQYYhr-kWqiRPryPqdd6P09sp45YIDSsMnxkg_0bExm9i",
+    "description": "Coming soon! My final capstone project at NSS, a practice logger for musicians with a built in metronome and recorder that automatically increases tempo as you progress.",
+    "tech": ["html5", "css3", "sass", "javascript", "react", "python", "django"],
+    "url": "",
+    "code": ""
+  },
+  {
     "title": "Pocket Piggy",
     "image": "pocket-piggy-ss.gif",
     "description": "A mobile app that lets parents and kids manage money together. Parents can add funds to kids accounts and add chores and kids can make wishlists accept chores and ask permission to buy the things with the money in their account.",
@@ -12,7 +20,7 @@
     "image": "le-baguette-site-demo-1.gif",
     "description": "A managment dashboard for a fictional 5-star Michelin resturant. Manage menu, ingredients, employees and seating.",
     "tech": ["html5", "css3", "sass", "javascript", "firebase"],
-    "url": "https://https://nutshell-moose.web.app/",
+    "url": "https://nutshell-moose.web.app/",
     "code": "https://github.com/jshearon/nutshell-moose"
   },
   {
