@@ -1,7 +1,7 @@
 [
   {
     "title": "Practice Pal",
-    "image": "https://lh3.googleusercontent.com/proxy/sQRJkLCQA9uy9QcmhFJOa7hUG84VY4WSwVfZ6ZAaj-9xci4pJF-iEZIiQwoPQYYhr-kWqiRPryPqdd6P09sp45YIDSsMnxkg_0bExm9i",
+    "image": "https://www.sttrwa.com/wp-content/uploads/coming-soon-red-hanging-sign.png",
     "description": "Coming soon! My final capstone project at NSS, a practice logger for musicians with a built in metronome and recorder that automatically increases tempo as you progress.",
     "tech": ["html5", "css3", "sass", "javascript", "react", "python", "django"],
     "url": "",

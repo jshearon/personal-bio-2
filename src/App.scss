@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
+html, body { min-height: 100%; background-color: #ED553B; }
+
 .App {
   text-align: center;
   background-color: #ED553B;
@@ -9,13 +11,52 @@
   font-family: 'Oswald', sans-serif;
 }
 
+@media (max-width: 991px) {
+  .navbar-collapse {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 75%;
+      height: 100%;
+      transform: translateX(-100%);
+      background-color:#7e1806;
+      padding: 0 !important;
+      margin: 0 !important;
+  }
+
+  .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
+    max-height: none;
+  }
+
+  .collapse {
+    transform: translateX(0%);
+    transition: transform 300ms linear !important;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .collapsing {
+    transform: translateX(-100%);
+    transition: transform 300ms linear !important;
+  }
+
+  .navbar-nav > a {
+    color: white !important;
+    font-size: 30px !important;
+    margin: 10px; 
+  }
+
+}
+
+
+
+.navbar {
+  z-index: 10000;
+}
+
 .navbar > button {
   border-color: white !important;
   color: white !important;
-}
-
-.navbar-nav {
-  background-color: transparent;
 }
 
 .navbar-nav > a {
@@ -156,6 +197,7 @@
   h3 {
     font-weight: 300;
     font-size: 3vw;
+    text-align: left;
   }
 }
 
@@ -183,4 +225,12 @@
 	animation-timing-function: ease-in;
   animation-duration: 1s;
   animation-fill-mode: forwards;
+}
+
+.profileImg {
+  height: 20vh;
+  margin: auto;
+  border-radius: 50%;
+  border: .2rem solid white;
+  padding: .3rem;
 }
