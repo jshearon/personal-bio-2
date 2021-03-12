@@ -13,9 +13,11 @@ export const About = () => {
   })
 
   return (
-    <div className="about text-left m-auto">
-      <h1>Hi, I'm Jonathan. </h1>
+    <div className="about m-auto">
+      <img src={'/images/me.jpg'}  alt={'Me'} className={'profileImg'} />
       
+      <h1>Hi, I'm Jonathan. </h1>
+
       <h3>I'm a full-stack software developer who loves to make cool things 
       that make life easier for me and everyone else. Things that get business done and make productivity soar.</h3> 
       <h3>I'm currently enrolled in Nashville Software School
