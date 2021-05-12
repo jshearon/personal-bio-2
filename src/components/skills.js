@@ -1,5 +1,6 @@
 import React, { useEffect, useContext } from 'react'
 import { LogoContext } from './logoProvider';
+import './skills.scss';
 
 export const Skills = () => {
   const { 
